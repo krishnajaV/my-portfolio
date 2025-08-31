@@ -1,0 +1,35 @@
+:root {
+    --font-sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    --fz-xxs: 12px;
+    --fz-xs: 13px;
+    --fz-sm: 14px;
+    --fz-md: 16px;
+    --fz-lg: 18px;
+    --fz-xl: 20px;
+    --fz-xxl: 22px;
+    --fz-heder-name: 1.875rem;
+    --fz-1xl: 1rem;
+    --fz-2xl: 1.4rem;
+    --fz-3xl: 1.875rem;
+    --fz-4xl: 2.5rem;
+    --fz-5xl: 3rem;
+    --fz-6xl:3.5rem;
+    --fz-8xl:5rem;
+    
+}
+body{
+    --primary-background-color:#121e27;
+    --primary-text-color:#ffffffe0;
+    --secondary-color:#ff715b;
+    --primary-background-color-lite : #b1d2ea0a;
+    color:var(--primary-text-color);
+    background-color: var(--primary-background-color);
+    font-family: var(--font-sans);
+}
+* {
+    box-sizing: border-box;
+}
+.material-symbols-outlined {
+    font-size: inherit !important;
+}

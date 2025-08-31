@@ -1,0 +1,44 @@
+@import url(variables.scss);
+.about-me-main h1 {
+    font-size: var(--fz-4xl);
+    margin:10px 0px 0px 0px !important;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+.about-me-main {
+    text-align: center;
+}
+.about-me-content p {
+    text-align: justify;
+    line-height: 1.5rem;
+}
+.skill-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .skill-image-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill-image-and-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .skill-image-and-name img {
+    max-width: 100%;
+    height: auto;
+  }
+  

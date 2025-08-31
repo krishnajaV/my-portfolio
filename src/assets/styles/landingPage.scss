@@ -1,0 +1,24 @@
+@import url(variables.scss);
+.landing-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.initial-logo {
+    width: 80px; 
+    height: 80px;
+    background-color: transparent;
+    border: 2px solid ;
+    border-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;  
+    position: relative;
+  }
+.logo-letter{
+    color: var(--secondary-color);
+    font-weight: bold;
+}

@@ -1,0 +1,53 @@
+@import url(variables.scss);
+:root{
+    --footer-height : 150px;
+}
+.firstPage {
+    counter-reset: section 0;
+}
+main {
+    margin: 0px auto;
+    width: 100%; 
+    max-width: 1600px;
+    min-height: 100vh;
+    padding: 12.5rem 8rem 0px 10rem;
+    @media (max-width: 1024px) {
+        padding: 7.5rem 2rem 0px 2rem !important
+    }
+    @media (max-width: 768px) {
+        padding: 7.5rem 0.5rem 0px 0.5rem !important
+    }
+}
+footer{
+    width: 100%; 
+    margin: 8rem 0rem 0rem 0rem;
+    height: var(--footer-height);
+    background-color: var(--primary-background-color-lite);
+    
+}
+.footer-div , .footer-social-media{
+    display: flex;
+    align-items:baseline;
+    justify-items: center;
+    justify-content: center;
+}
+.footer-social-media{
+    margin-top:10px;
+}
+.footer-social-media a svg{
+    height: 24px;
+    margin: 1rem 1rem 1rem 1rem;
+    color: white;
+}
+.footer-heading {
+    font-size: var(--fz-3xl);
+    margin-top:10px;
+    @media (max-width: 1024px) {
+        font-size: var(--fz-2xl);
+    }
+}
+.footer-content span a {
+    color: white; 
+    text-decoration: none;
+    font-style: italic;
+}

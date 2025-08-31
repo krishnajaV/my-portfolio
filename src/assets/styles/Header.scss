@@ -1,0 +1,125 @@
+@import url(variables.scss);
+:root{
+    --nav-height: 100px;
+    --nav-height-mobile: 40px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    height: var(--nav-height);
+    width: 100%;
+    padding: 0px 8rem 0px 10rem;
+    background-color: var(--primary-background-color);
+    @media (max-width: 1024px) {
+        padding: 0px 2rem 0px 2rem !important;
+    }
+    @media (max-width: 768px) {
+        padding: 0rem 1rem 0rem 0.5rem !important
+    }
+    z-index: 13;
+}
+.header ol {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0; 
+    margin: 0;
+    list-style: none; 
+    
+}
+.header ol li{
+    margin: 0px 10px;
+    position: relative;
+    
+}
+.header ol li :hover {
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--secondary-color);
+    text-underline-offset: 8px;
+    text-decoration-line: underline;
+}
+.header ol li :active {
+    font-weight: bold;
+}
+.header ol li a {
+    padding: 0px 30px 0px 30px;
+    cursor: pointer;
+}
+.header ol li a ::before{
+    text-align: right;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+.header .full-name{
+    font-size: var(--fz-heder-name);
+    font-family: var(--font-sans);
+    cursor: pointer;
+}
+.burger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.front-page-logo {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media (max-width :1024px){
+    .burger-menu {
+        display: block;
+        margin-right: 15px;
+    }
+    .front-page-logo {
+        display: block;
+        width: 40px; 
+        height: 40px;
+        border: 2px solid ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0%;  
+        position: relative;
+    }
+    .front-page-logo-letter{
+        font-weight: bold;
+    }
+    .header .full-name{
+        display: none;
+    }
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: var( --nav-height-mobile);
+        right: 0;
+        width: 100%;
+        background-color: var(--primary-background-color);
+        padding: 20px;
+    }
+    .nav-items.active {
+        display: flex;
+    }
+    .header ol {
+        flex-direction: column;
+    }
+    .header ol li{
+        margin: 10px 0px;
+    }
+}
+
+.nav-bar-class{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    z-index: 12;
+}

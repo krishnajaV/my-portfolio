@@ -1,0 +1,125 @@
+@import url(variables.scss);
+.personal_details h2 {
+    font-size: var( --fz-5xl);
+    margin:10px 0px 0px 0px !important
+}
+.personal_details h1 {
+    font-size: var( --fz-6xl);
+    margin:10px 0px 0px 0px !important
+}
+.personal_details .secondary-dot{
+    font-size: var( --fz-8xl);
+    color: var(--secondary-color);
+}
+.personal_details .personal-name {
+    font-size: var( --fz-4xl);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.home-page-personal-det{
+    display: flex;
+    justify-content: center;
+    min-height: 450px;
+}
+.secondary-line{
+    height: 3px;
+    background-color: var(--secondary-color);
+    width: 100px;
+    margin-right: 1rem;
+}
+.personal-photo{
+    margin-left: 2rem;
+    width: 350px;
+}
+.circle-photo{
+    position: absolute;
+    width:350px;
+    height:auto;
+    margin-top:60px;
+}
+.resume-btn{
+    border: 1px solid;
+    border-color: var(--secondary-color);
+    padding:5px;
+    cursor: pointer;
+    position: absolute;
+    align-items: end;
+    margin-top: 4rem;
+    margin-left:18rem;
+    font-size: var( --fz-2xl);
+}
+.resume-btn a {
+    color: white; 
+    text-decoration: none;
+}
+@media (max-width: 1024px) {
+    .personal_details {
+       text-align: center;
+    }
+    .personal_details h2, .personal_details h1 ,.personal_details .personal-name{
+        font-size: var( --fz-3xl);
+        margin:20px 0px 0px 20px !important
+    }
+    .personal_details .secondary-dot{
+        font-size: var( --fz-3xl);
+    }
+    .personal_details .personal-name{
+        text-decoration: underline;
+        text-decoration-color: var(--secondary-color);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 8px;
+        display: block;
+    }
+    .secondary-line {
+        display: none;
+    }
+    .home-page-personal-det{
+        text-align: center;
+        display: block;
+        min-height:650px;
+
+    }
+    .resume-btn{
+        position: relative;
+        margin-top: 1.5rem;
+        margin-left:0px;
+    }
+    .personal-photo{
+        margin-left: 0px;
+    }
+    .left-arrow-btn, .right-arrow-btn{
+        display: none;
+    }
+}
+.left-arrow-btn, .right-arrow-btn{
+    position: absolute;
+    margin-top: 200px;
+    font-size: 60px !important;
+    color: #4b565e;
+    cursor: pointer;
+    z-index: 15 !important;
+}  
+.left-arrow-btn :hover , .right-arrow-btn :hover{
+    color: white;
+}
+.left-arrow-btn{
+    margin-left: 15px;
+}
+.right-arrow-btn{
+    margin-left: 275px;
+}
+.profile-image {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 1;
+    transform: scale(1);
+}
+  
+.fade-out {
+    opacity: 0;
+    transform: scale(0.95);
+}
+.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}

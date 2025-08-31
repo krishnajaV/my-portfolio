@@ -1,0 +1,82 @@
+@import url(variables.scss);
+.experience-project-sub {
+    text-align: center;
+}
+.experience-project-sub h1{
+    font-size: var(--fz-4xl);
+    margin:40px 0px 20px 0px !important;
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+}
+.project-section h1{
+    font-size: var(--fz-2xl);
+}
+.secondary-color-name{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.clint-and-skills{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+.project-skill-set{
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 0%;
+    margin: 0px 0px 0px 10px;
+    background-color: #1f2d37;
+    border-color: #374151;
+    border-radius: 6px;
+}
+.project-descriptions, .experience-descriptions {
+    line-height: 1.5rem;
+    text-align: justify;
+}
+@media (max-width : 1024px) {
+    .clint-and-skills, .experience-details{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .project-skill-set, .experience-details .location, .experience-details .duration{
+        margin: 10px 0px 0px 10px;
+    }
+    .project-descriptions, .experience-descriptions {
+        text-align: justify;
+    }
+}
+.experience-section , .project-section , .award-section{
+    margin-top:20px;
+    border: 2px solid;
+    padding: 10px;
+    background-color: #1f2d37;
+    border-color: #374151;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.experience-details{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+}
+.experience-details .location, .experience-details .duration{
+    margin-left:20px;
+    border: 2px solid;
+    padding: 5px;
+    background-color: #1f2d37;
+    border-color: #374151;
+    border-radius: 6px;
+}
+
+.section-headings {
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--fz-2xl);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--secondary-color);
+    text-underline-offset: 8px;
+}
